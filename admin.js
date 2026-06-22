@@ -3,7 +3,7 @@ const passwordInput = document.getElementById("adminPassword");
 const error = document.getElementById("error");
 
 // load saved password OR default
-const ADMIN_PASSWORD = localStorage.getItem("adminPassword") || "PASSword";
+const ADMIN_PASSWORD = localStorage.getItem("adminPassword") || "PASSword1";
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();
