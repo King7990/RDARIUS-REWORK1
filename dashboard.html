@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RDarius AI Admin</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="theme-purple">
+
+<!-- LOADING -->
+
+<div id="loadingScreen">
+
+<div class="loader"></div>
+
+<h2>Loading RDarius AI...</h2>
+
+</div>
+
+<!-- TOASTS -->
+
+<div id="toastContainer"></div>
+
+<!-- HOLIDAY EFFECTS -->
+
+<div id="snow"></div>
+
+<div id="pumpkins"></div>
+
+<div id="hearts"></div>
+
+<div id="fireworks"></div>
+
+<!-- ========================= -->
+<!-- SIDEBAR -->
+<!-- ========================= -->
+
+<aside id="sidebar">
+
+<div>
+
+<div class="logo">
+
+<div class="logoIcon">🤖</div>
+
+<div class="logoText">
+
+<h2>RDarius AI</h2>
+
+<p>Administrator</p>
+
+</div>
+
+</div>
+
+<nav>
+
+<button class="nav active" data-page="dashboard">
+
+🏠 <span>Dashboard</span>
+
+</button>
+
+<button class="nav" data-page="settings">
+
+🎨 <span>Web Settings</span>
+
+</button>
+
+<button class="nav" data-page="server">
+
+🖥️ <span>Server Details</span>
+
+</button>
+
+</nav>
+
+</div>
+
+<div class="sidebarBottom">
+
+<button id="collapseSidebar">
+
+☰ Collapse
+
+</button>
+
+<button id="previewWebsite">
+
+🌍 Preview Website
+
+</button>
+
+<button id="logout">
+
+🚪 Logout
+
+</button>
+
+</div>
+
+</aside>
+
+<!-- ========================= -->
+<!-- MAIN -->
+<!-- ========================= -->
+
+<main id="mainContent">
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+<div>
+
+<h1 id="pageTitle">
+
+Dashboard
+
+</h1>
+
+<p>
+
+Manage every part of RDarius AI
+
+</p>
+
+</div>
+
+<div class="topRight">
+
+<div class="adminProfile">
+
+<div class="avatar">
+
+D
+
+</div>
+
+<div>
+
+<b>Darius</b><br>
+
+<small>Super Admin</small>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================= -->
+<!-- DASHBOARD -->
+<!-- ========================= -->
+
+<section class="page active" id="dashboard">
+
+<div class="statsGrid">
+
+<div class="card">
+
+<h3>AI Status</h3>
+
+<h2 id="aiStatus">
+
+🟢 Online
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Users Online</h3>
+
+<h2 id="users">
+
+0
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Total Chats</h3>
+
+<h2 id="chats">
+
+0
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Server Uptime</h3>
+
+<h2 id="uptime">
+
+99.9%
+
+</h2>
+
+</div>
+
+</div>
+
+<div class="dashboardGrid">
+
+<div class="largeCard">
+
+<h2>
+
+Recent Activity
+
+</h2>
+
+<div id="activityFeed">
+
+</div>
+
+</div>
+
+<div class="largeCard">
+
+<h2>
+
+Quick Actions
+
+</h2>
+
+<button id="restartAI">
+
+Restart AI
+
+</button>
+
+<button id="clearChats">
+
+Clear Chats
+
+</button>
+
+<button id="refreshStats">
+
+Refresh Dashboard
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- WEB SETTINGS -->
+<!-- ========================= -->
+
+<section class="page" id="settings">
+
+<div class="panel">
+
+<h2>
+
+Website Theme
+
+</h2>
+
+<p>
+
+Changes affect the entire website.
+
+</p>
+
+<div class="theme-grid">
+
+<button class="theme-btn" data-theme="purple">Purple</button>
+
+<button class="theme-btn" data-theme="blue">Blue</button>
+
+<button class="theme-btn" data-theme="green">Green</button>
+
+<button class="theme-btn" data-theme="red">Red</button>
+
+<button class="theme-btn" data-theme="orange">Orange</button>
+
+<button class="theme-btn" data-theme="pink">Pink</button>
+
+<button class="theme-btn" data-theme="gold">Gold</button>
+
+<button class="theme-btn" data-theme="cyan">Cyan</button>
+
+<button class="theme-btn" data-theme="teal">Teal</button>
+
+<button class="theme-btn" data-theme="midnight">Midnight</button>
+
+<button class="theme-btn" data-theme="light">Light</button>
+
+<button class="theme-btn" data-theme="neon">Neon</button>
+
+</div>
+
+</div>
+
+<div class="panel">
+
+<h2>
+
+Holiday Mode
+
+</h2>
+
+<select id="holiday">
+
+<option value="none">
+
+Off
+
+</option>
+
+<option value="christmas">
+
+Christmas 🎄
+
+</option>
+
+<option value="halloween">
+
+Halloween 🎃
+
+</option>
+
+<option value="valentine">
+
+Valentine ❤️
+
+</option>
+
+<option value="newyear">
+
+New Year 🎆
+
+</option>
+
+</select>
+
+</div>
+
+<div class="panel">
+
+<h2>
+
+AI Controls
+
+</h2>
+
+<button id="toggleAI">
+
+Disable AI
+
+</button>
+
+</div>
+
+<div class="panel">
+
+<h2>
+
+Change Password
+
+</h2>
+
+<input type="password" id="currentPassword" placeholder="Current Password">
+
+<input type="password" id="newPassword" placeholder="New Password">
+
+<input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+<span id="passwordMessage"></span>
+
+<div class="button-row">
+
+<button id="saveSettings">
+
+Save Changes
+
+</button>
+
+<button id="resetSettings">
+
+Reset Everything
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SERVER DETAILS -->
+<!-- ========================= -->
+
+<section class="page" id="server">
+
+<div class="server-grid">
+
+<div class="server-card">
+
+<h3>Server ID</h3>
+
+<p id="serverID">
+
+RD-001
+
+</p>
+
+</div>
+
+<div class="server-card">
+
+<h3>AI Provider</h3>
+
+<p>
+
+Groq
+
+</p>
+
+</div>
+
+<div class="server-card">
+
+<h3>Backend</h3>
+
+<p id="backendStatus">
+
+Connected
+
+</p>
+
+</div>
+
+<div class="server-card">
+
+<h3>Theme</h3>
+
+<p id="currentTheme">
+
+Purple
+
+</p>
+
+</div>
+
+<div class="server-card">
+
+<h3>Holiday</h3>
+
+<p id="currentHoliday">
+
+Off
+
+</p>
+
+</div>
+
+<div class="server-card">
+
+<h3>Admin Version</h3>
+
+<p>
+
+v2.0
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

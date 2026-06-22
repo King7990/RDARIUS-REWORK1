@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#070b17;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Background */
+
+.background{
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top left,#7b2ff744,transparent 40%),
+    radial-gradient(circle at bottom right,#00c6ff33,transparent 40%),
+    #070b17;
+    z-index:-1;
+}
+
+/* Navbar */
+
+nav{
+    width:100%;
+    padding:25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover,
+nav .active{
+    color:#7b2ff7;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:80px 20px 40px;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:30px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#bdbdbd;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Feature Cards */
+
+.features{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:35px;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#7b2ff7;
+    box-shadow:0 20px 50px rgba(123,47,247,.3);
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#bdbdbd;
+    line-height:1.7;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    gap:20px;
+}
+
+}

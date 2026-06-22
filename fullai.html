@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDarius AI</title>
+    <link rel="stylesheet" href="fullai.css">
+</head>
+<body>
+
+<div class="start-screen" id="startScreen">
+    <div class="start-card">
+        <h1>🤖 RDarius AI</h1>
+        <p>Your personal premium AI companion</p>
+        <button id="startBtn">Start Now</button>
+    </div>
+</div>
+
+<div class="chat-screen hidden" id="chatScreen">
+    <nav class="navbar">
+        <div class="logo"><a href="ai.html">🤖 RDarius AI</a></div>
+        <div class="nav-links">
+            <a href="ai.html">Home</a>
+            <a href="#" class="active">Chat</a>
+            <a href="#">About</a>
+            <a href="admin.html" class="admin-link">Admin Panel</a>
+        </div>
+    </nav>
+
+    <div class="chat-body" id="chatBody"></div>
+
+    <div class="chat-input-container">
+        <div class="chat-input">
+            <input id="userInput" placeholder="Ask RDarius anything...">
+            <button id="sendBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="fullai.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDarius AI</title>
+
+    <link rel="stylesheet" href="ai.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4d5f7c62c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="background"></div>
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+
+<nav>
+
+    <div class="logo">
+        🤖 RDarius
+    </div>
+
+    <ul>
+        <li><a href="ai.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="admin.html">Admin-Panel</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <span class="badge">
+            AI Powered
+        </span>
+
+        <h1>
+            Your Personal <br>
+            AI Assistant
+        </h1>
+
+        <p>
+            Meet RDarius, your intelligent assistant that can answer
+            questions, help with coding, school, gaming and much more.
+        </p>
+
+        <div class="buttons">
+           <a href="fullai.html">
+            <button class="primary">
+                Start Chat
+            </button>
+</a>
+            <button class="secondary">
+                Learn More
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="chat-card">
+
+        <div class="chat-header">
+
+            <div class="bot">
+
+                <div class="avatar">
+                    🤖
+                </div>
+
+                <div>
+                    <h3>RDarius</h3>
+                    <small>Online</small>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="chat-body" id="chatBody">
+
+            <div class="message bot-message">
+                Hello 👋
+            </div>
+
+            <div class="message bot-message">
+                I'm RDarius. Ask me anything!
+            </div>
+
+            <div class="message user-message">
+                Can you help me build websites?
+            </div>
+
+            <div class="message bot-message">
+                Absolutely! I can build HTML, CSS and JavaScript projects.
+            </div>
+
+        </div>
+
+        <div class="chat-input">
+
+            <input
+            type="text"
+            id="userInput"
+            placeholder="Type your message...">
+
+            <button id="sendBtn">
+
+                <i class="fas fa-paper-plane"></i>
+
+            </button>
+
+        
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="ai.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+/* ===============================
+   RDARIUS AI ADMIN LOGIN
+=================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#070b17;
+    color:white;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* Background */
+
+.background{
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top left,#7b2ff744,transparent 40%),
+    radial-gradient(circle at bottom right,#00c6ff33,transparent 40%),
+    #070b17;
+    z-index:-5;
+}
+
+/* Glow */
+
+.glow{
+    position:fixed;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:.45;
+    z-index:-4;
+}
+
+.glow1{
+    background:#7b2ff7;
+    top:-150px;
+    left:-150px;
+}
+
+.glow2{
+    background:#00c6ff;
+    bottom:-150px;
+    right:-150px;
+}
+
+/* Login Card */
+
+.login-box{
+    width:420px;
+    max-width:90%;
+    padding:45px 35px;
+
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+/* Logo */
+
+.logo{
+    width:90px;
+    height:90px;
+    margin:auto;
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:42px;
+
+    background:linear-gradient(135deg,#7b2ff7,#00c6ff);
+
+    box-shadow:0 10px 35px rgba(123,47,247,.35);
+}
+
+.login-box h1{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.login-box p{
+    color:#bdbdbd;
+    margin-bottom:30px;
+}
+
+/* Input */
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group input{
+    width:100%;
+    padding:16px;
+
+    border:none;
+    outline:none;
+
+    border-radius:14px;
+
+    background:#111827;
+
+    color:white;
+    font-size:16px;
+
+    border:1px solid transparent;
+
+    transition:.3s;
+}
+
+.input-group input:focus{
+    border-color:#7b2ff7;
+    box-shadow:0 0 20px rgba(123,47,247,.25);
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:16px;
+
+    border:none;
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:17px;
+    font-weight:600;
+
+    color:white;
+
+    background:linear-gradient(135deg,#7b2ff7,#00c6ff);
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(123,47,247,.35);
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 20px 40px rgba(123,47,247,.45);
+}
+
+/* Error */
+
+#error{
+    color:#ff5b5b;
+    margin-top:20px;
+    font-size:15px;
+    min-height:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.login-box{
+    width:92%;
+    padding:35px 25px;
+}
+
+.login-box h1{
+    font-size:28px;
+}
+
+.logo{
+    width:75px;
+    height:75px;
+    font-size:36px;
+}
+
+}
+
+a {
+    color: #00c6ff33;
+    text-decoration: none;
+}
