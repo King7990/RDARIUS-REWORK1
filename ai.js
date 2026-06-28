@@ -8,7 +8,7 @@ const userInput = document.getElementById("userInput");
 const sendBtn = document.getElementById("sendBtn");
 
 // 🔑 GROQ API KEY
-const API_KEY = "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";
+const API_KEY = "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";
 
 function addMessage(text, type) {
     const msg = document.createElement("div");
